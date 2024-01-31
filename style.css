@@ -85,6 +85,107 @@ nav .navbar-brand {
 
 }
 
+.modal-header {
+  background: linear-gradient(90deg, rgba(58, 159, 180, 1) 0%, rgba(188, 69, 252, 1) 100%);
+  color: white;
+}
+
+.slogan {
+  background: linear-gradient(90deg, rgba(58, 159, 180, 1) 0%, rgba(188, 69, 252, 1) 100%);
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+
+}
+
+.slogan p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 500px;
+
+}
+
+.slogan img {
+  margin: 0 auto;
+  width: auto;
+  height: 50px;
+  margin-top: 20px;
+
+}
+
+.features {
+  padding: 60px 0;
+}
+
+.features .phone {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  margin-right: 140px;
+}
+
+.features .phone .gradient-circle {
+  top: 120px;
+  right: 0px;
+  width: 300px;
+  height: 300px;
+}
+
+.features .phone .fa-circle {
+  top: unset;
+  right: unset;
+
+  left: -60px;
+  bottom: 50px;
+}
+
+.features .phone .fa-xmark {
+  left: unset;
+  bottom: unset;
+
+  top: -15px;
+  right: -90px;
+
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-item h4 {
+  font-size: 20px;
+  line-height: 28px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.feature-item p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #666;
+}
+
+.feature-item i {
+  background: linear-gradient(90deg, rgba(58, 159, 180, 1) 0%, rgba(188, 69, 252, 1) 100%);
+  color: transparent;
+  background-clip: text;
+}
+
+@media (max-width: 768px) {
+  .slogan p {
+    width: 90%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .hero {
     text-align: center;
@@ -94,6 +195,7 @@ nav .navbar-brand {
     width: 40%;
     height: auto;
     margin-top: 80px;
+    margin-right: 5px;
   }
 
   .hero-title {
@@ -107,4 +209,120 @@ nav .navbar-brand {
     line-height: 28px;
     padding: 0 10%;
   }
+}
+
+.light-section {
+  padding: 60px 0;
+}
+
+.light-section-title {
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.light-section-intro {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.light-section-text {
+  padding-right: 160px;
+}
+
+@media screen and (max-width: 768px) {
+  .light-section {
+    padding: 60px 0;
+  }
+
+  .light-section-title {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .light-section-intro {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .light-section-text {
+    padding-right: 0 10%;
+
+  }
+
+  .light-section .img-fluid {
+    width: 60%;
+  }
+}
+
+.img-section {
+  padding: 220px 0;
+  background-image: url("https://images.unsplash.com/photo-1620912189865-1e8a33da4c5e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4MTg1MDA1Ng&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1500");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.img-section::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.img-section .text {
+  font-size: 64px;
+  line-height: 80px;
+  color: #fff;
+}
+
+.img-section-content {
+  z-index: 20;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .img-section-content {
+    padding: 0 10%;
+  }
+
+  .img-section .text {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  
+}
+
+.cta {
+  padding: 100px 0;
+  color: white;
+  background-image: linear-gradient(90deg, rgba(58, 159, 180, 1) 0%, rgba(188, 69, 252, 1) 100%);
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.cta .buttons {
+  margin-top: 30px;
+}
+
+footer {
+  color: #666;
+}
+
+.list a {
+  text-decoration: none;
+  color: #666;
+}
+
+.list a:hover {
+  color: white;
+  text-decoration: underline;
 }
